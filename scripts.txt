@@ -10,3 +10,12 @@ flask --app app run --debug
 Esta criando os arquivos __pycache__ para a aplicacao rodar melhor e por que a variavel de ambiente
 PYTHONDONTWRITEBYTECODE esta definida como 0, nao consigo resolver nativamente AINDA, mas no docker
 eu retiro ela como 0, entao foda-se.
+
+
+-- Dependencias (eu acho)
+Flask==2.3.2
+Flask-Migrate==4.0.4
+Flask-MySQL==1.5.2
+Flask-SQLAlchemy==3.0.5
+SQLAlchemy==2.0.17
+python-dotenv==0.21.0
