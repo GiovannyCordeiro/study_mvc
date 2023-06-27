@@ -15,6 +15,7 @@ class App:
     
     
     def run(self):
+        self.app.register_blueprint(blueprint, url_prefix='/machines')
         if __name__ == '__main__':
             self.app.run(host='127.0.0.1', port=5000, debug=True)
 
