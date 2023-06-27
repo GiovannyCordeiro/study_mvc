@@ -1,6 +1,6 @@
 import json
 from models.machine import db
-from services.user_service import insert_logic, create_logic
+from services.user_service import UserService
 
 class MachineController:
     def index():
@@ -11,7 +11,7 @@ class MachineController:
     }
 
     def create():
-        create_logic()
+        UserService.create_logic()
     
     def insert():
-        insert_logic()
+        UserService.insert_logic()
