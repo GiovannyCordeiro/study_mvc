@@ -19,3 +19,4 @@ Flask-MySQL==1.5.2
 Flask-SQLAlchemy==3.0.5
 SQLAlchemy==2.0.17
 python-dotenv==0.21.0
+pytest==7.4.0

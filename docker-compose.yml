@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: dockerfile
+    restart: always
+    volumes:
+      - ./src:/src
+    ports:
+      - 8080:8080
+    container_name: app_flask
+    command: sh -c "python app.py -B -m flask --app app run --debug" 
