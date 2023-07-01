@@ -1,7 +1,11 @@
+import os
+from dotenv import load_dotenv
 from flask import Flask
 from flask_migrate import Migrate
 from routes.blueprint import blueprint
 from models.machine import db
+
+load_dotenv()
 
 class App:
     def __init__(self):
@@ -17,7 +21,7 @@ class App:
     def run(self):
         self.app.register_blueprint(blueprint, url_prefix='/machines')
         if __name__ == '__main__':
-            self.app.run(host='0.0.0.0', port=8080, debug=True)
+            self.app.run(host='localhost', port=os.environ['PORT'], debug=True)
 
 app = App()
 app.run()
