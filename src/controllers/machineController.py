@@ -5,6 +5,9 @@ from services.user_service import UserService
 class MachineController:
     def index():
         return {
+        'status': 'OK',
+        'localhost:8080/machines/create': 'Create table in mysql database',
+        'localhost:8080/machines/insert': 'Insert data in mysql database table(Inserttable)'
     }
 
     def create():
@@ -12,8 +15,3 @@ class MachineController:
     
     def insert():
         UserService.insert_logic()
-
-
-class ClasseInutil:
-    def metodoInutil():
-        print("print mais inutil ainda")
