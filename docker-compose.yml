@@ -6,6 +6,10 @@ services:
       context: .
       dockerfile: dockerfile
     restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      
     volumes:
       - ./src:/src
     ports:
