@@ -15,3 +15,6 @@ class MachineController:
     
     def insert():
         UserService.insert_logic()
+
+    def countRouter(num1):
+        return {'number': UserService.sum(num1)}

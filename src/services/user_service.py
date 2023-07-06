@@ -35,3 +35,6 @@ class UserService:
                 # db.session.commit()
         return '-- DATA INSERTED --'
         db.session.commit()
+    
+    def sum(num1):
+        return num1 + 15
