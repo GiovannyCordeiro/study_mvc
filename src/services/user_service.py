@@ -37,4 +37,4 @@ class UserService:
         db.session.commit()
     
     def sum(num1):
-        return num1 + 15
+        return num1 + 16
